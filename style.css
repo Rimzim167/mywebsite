@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ff7f50, #ff6347);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Animal List */
+.animal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+}
+
+.animal {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.animal img {
+    width: 100%;
+    /* Image fits inside the container */
+    height: 200px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Keeps aspect ratio */
+    border-radius: 10px;
+}
+
+.animal h3 {
+    margin: 0.5rem 0;
+}
+
+.animal p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Animal Profile */
+.animal-profile {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 600px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animal-profile img {
+    width: 100%;
+    /* Fully responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 400px;
+    /* Prevent oversized images */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.adopt-button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.adopt-button:hover {
+    background: #ff6347;
+}
+
+/* Adoption Form */
+.adoption-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.adoption-form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.adoption-form input,
+.adoption-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.adoption-form button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.adoption-form button:hover {
+    background: #ff6347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
